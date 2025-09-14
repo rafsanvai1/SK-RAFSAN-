@@ -1,25 +1,23 @@
 module.exports.config = {
  name: "Zisan",
  version: "1.0.0",
- hasPermssion: 0,
+ hasPermssion: 2,
  credits: "𝐂𝐘𝐁𝐄𝐑 ☢️_𖣘 -𝐁𝐎𝐓 ⚠️ 𝑻𝑬𝑨𝑴_ ☢️",
- description: "RANDOM islamic video",
+ description: "islamic video",
  commandCategory: "admin",
- usages: "Statusvideo",
- cooldowns: 2,
+ usages: "random video",
+ cooldowns: 5,
  dependencies: {
- "request":"",
- "fs-extra":"",
- "axios":""
+ request: '',
+ "fs-extra": '',
+ axios: ''
  }
- 
 };
 
-module.exports.run = async({api,event,args,Users,Threads,Currencies}) => {
-const axios = global.nodemodule["axios"];
-const request = global.nodemodule["request"];
-const fs = global.nodemodule["fs-extra"];
- var link = [
+module.exports.run = async function({ api, event }) {
+ const request = global.nodemodule["request"];
+ const fs = global.nodemodule["fs-extra"];
+var videoLinks = [
 "https://i.imgur.com/kJ0qwYs.mp4",
 "https://i.imgur.com/NPg1jod.mp4",
 "https://i.imgur.com/VNiG7dI.mp4",

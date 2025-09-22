@@ -30,26 +30,26 @@ module.exports.run = async function({ api, event }) {
 │ 🎓 𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐨𝐧 : TEXTILE ENGINEERING
 │ 🏡 𝐀𝐝𝐝𝐫𝐞𝐬𝐬 : JOYPURHAT, RAJSHAHI
 └───────────────⭓
-
+💙⃝⋆🕊️𝗭𝗜𝗦𝗔𝗡-🗡️⃟🖤⃝🎼
 ┌───────────────⭓
 │ 𝗖𝗢𝗡𝗧𝗔𝗖𝗧 𝗟𝗜𝗡𝗞𝗦
 ├───────────────
 │ 📘 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸:
 │ https://fb.com/100079776818351
 │ 💬 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽:
-│ https://wa.me/01882333052
+│ https://wa.me/01931411945
 └───────────────⭓
-
+─꯭─⃝͎̽V𝆭ɵ⃪𝆭͢͡ɪc⃪͜͡ê͎ C⃪͎ͯ͢ʀ⃪𝆭̂͢ʊ⃪𝆭͜͡ʂ⃪ʜ ͯ➾😘😈🪼🩷🪽
 ┌───────────────⭓
 │ 🕒 𝗨𝗽𝗱𝗮𝘁𝗲𝗱 𝗧𝗶𝗺𝗲
 ├───────────────
 │ ${time}
 └───────────────⭓
  `,
- attachment: fs.createReadStream(__dirname + "/cache/owner.jpg")
- }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/owner.jpg"));
+ attachment: fs.createReadStream(__dirname + "/cache/owner.mp4")
+ }, event.threadID, () => fs.unlinkSync(__dirname + "/cache/owner.mp4"));
 
- return request("https://i.imgur.com/wbFEdef.mp4")
- .pipe(fs.createWriteStream(__dirname + '/cache/owner.jpg'))
+ return request("https://i.imgur.com/rPl0O7k.mp4")
+ .pipe(fs.createWriteStream(__dirname + '/cache/owner.mp4'))
  .on('close', () => callback());
 };

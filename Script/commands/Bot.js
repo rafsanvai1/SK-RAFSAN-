@@ -66,7 +66,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("‎[𝐎𝐖𝐍𝐄𝐑:☞ 𝐙𝐈𝐒𝐀𝐍 𝐀𝐇𝐌𝐄𝐃 ッ ☜\n𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 Zisan Vai.\n𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝 :- https://www.facebook.com/ITS.ME.ZISAN.KING.OF.VIRTUAL.OKHAY.BEBZ\nYou Can Find Him WhatsApp :- +01931411945", threadID);
    };
 
-   if ((event.body.toLowerCase() == "Bot Kar") || (event.body.toLowerCase() == "admin ke ")) {
+   if ((event.body.toLowerCase() == "Bot Kar") || (event.body.toLowerCase() == "admin ke")) {
      return api.sendMessage("My Creator:𝐙𝐈𝐒𝐀𝐍 𝐀𝐇𝐌𝐄𝐃 ❤️ Hi dear i am your personal 🅰🅸 🅰🆂🅸🆂🆃🅰🅽🆃 My boss 𝐙𝐈𝐒𝐀𝐍 𝐀𝐇𝐌𝐄𝐃 creat me for yours helping so whats you need you can tell me 🥰", threadID);
    };
 
@@ -75,7 +75,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
    };
 
    if ((event.body.toLowerCase() == "ai") || (event.body.toLowerCase() == "Ai")) {
-     return api.sendMessage("If you want to use the AI command, type /ai ", threadID);
+     return api.sendMessage("If you want to use the AI command, type .pakhi on ", threadID);
    };
 
   
@@ -87,11 +87,11 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
      return api.sendMessage("️- ওয়ালাইকুমুস-সালাম-!!🖤", threadID);
    };
 
-   if ((event.body.toLowerCase() == "I am Zisan") || (event.body.toLowerCase() == "sala ami ullas") || (event.body.toLowerCase() == "cup sala ami ullash") || (event.body.toLowerCase() == "madari")) {
+   if ((event.body.toLowerCase() == "I am Zisan") || (event.body.toLowerCase() == "moni") || (event.body.toLowerCase() == "cup sala ami ullash") || (event.body.toLowerCase() == "madari")) {
      return api.sendMessage("Assalamualaikum Boss My Creator. How Are You? I hope you are very well🥰🫡", threadID);
    };
 
-   if ((event.body.toLowerCase() == "@Pakhi Chowdhury▁▁╱╱🩵🪿🩷🪽 ") || (event.body.toLowerCase() == "Moni")) {
+   if ((event.body.toLowerCase() == "@Pakhi Chowdhury▁▁╱╱🩵🪿🩷🪽 ") || (event.body.toLowerCase() == "pakhi")) {
      return api.sendMessage("Don't Call Her She is my boss 𝐙𝐈𝐒𝐀𝐍's Wife.And also my mam.😠🥰⛏️", threadID);
    };
 
@@ -128,7 +128,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
    };
 
    if ((event.body.toLowerCase() == "Name") || (event.body.toLowerCase() == "name") || (event.body.toLowerCase() == "Tor nam ki")) {
-     return api.sendMessage("️MY NAME IS °_>🅰🅸 🅰🆂🅸🆂🆃🅰🅽🆃 my creator: 𝐙𝐈𝐒𝐀𝐍 𝐀𝐇𝐌𝐄𝐃", threadID);
+     return api.sendMessage("️MY NAME IS °_> ─꯭─⃝͎̽V𝆭ɵ⃪𝆭͢͡ɪc⃪͜͡ê͎ C⃪͎ͯ͢ʀ⃪𝆭̂͢ʊ⃪𝆭͜͡ʂ⃪ʜ ͯ➾😘😈🪼🩷 my creator: 𝐙𝐈𝐒𝐀𝐍 𝐀𝐇𝐌𝐄𝐃", threadID);
    };
 
    if ((event.body.toLowerCase() == "BOT ER BACCHA") || (event.body.toLowerCase() == "Bot er bacca")) {

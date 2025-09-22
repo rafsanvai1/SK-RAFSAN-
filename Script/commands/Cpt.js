@@ -22,37 +22,31 @@ module.exports.run = async function({ api, event, args, client, Users, Threads, 
 
   // some of the strings observed in the obfuscated array:
   const captionsParts = [
-    "🌸Assalamu alaikum 🌸\n🌺",
-    "Info\n\n𝐁𝐨𝐭 𝐎wner➢ 𝗭𝗜𝗦𝗔𝗡 𝗔𝗛𝗠𝗘𝗗",
-    "Thanks you so much my bot you bers enjoy",
-    "ur group ❤️‍🩹",
-    "For using my bot you"
+    "🌸Assalamu alaikum 🌸𝐁𝐨𝐭 𝐎wner➢ 𝗭𝗜𝗦𝗔𝗡 𝗔𝗛𝗠𝗘𝗗 Thanks you so much enjoy your time with my bot Thanks For using my bot 🎁"
     // ... (original had many small fragments concatenated)
   ];
 
-  // list of candidate image URLs observed
-  const imageUrls = [
+  // list of candidate video URLs observed
+  const videoUrls = [
     "https://i.imgur.com/rPl0O7k.mp4",
-    "https://imgur.com/rPl0O7k.mp4",
-    "https://zF5f2BD.jp/whatever.jpg",
-    "https://inxiATH.jp/some.jpg",
-    "/cyber.jpg" // sometimes used as local filename
-    // (original had many repeated zF5f2BD.jp and some other hosts)
+    "https://imgur.com/rPl0O7k.mp4"
+    "cyber.mp4" // sometimes used as local filename
+    // (original had many repeated rPl0O7k.mp4 and some other hosts)
   ];
 
   // pick random caption and random image
   const randCaption = captionsParts[Math.floor(Math.random() * captionsParts.length)];
   const randImageUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)];
 
-  // local file path to save the downloaded image
-  const savePath = path.join(__dirname, "cyber.jpg");
+  // local file path to save the downloaded video
+  const savePath = path.join(__dirname, "cyber.mp4");
 
-  // download image and save to disk (using request stream)
+  // download video and save to disk (using request stream)
   await new Promise((resolve, reject) => {
     // ensure any previous file removed
     try { if (fs.existsSync(savePath)) fs.unlinkSync(savePath); } catch(e){}
 
-    request.get(encodeURI(randImageUrl))
+    request.get(encodeURI(randVideoUrl))
       .on('error', err => reject(err))
       .pipe(fs.createWriteStream(savePath))
       .on('finish', () => resolve())
